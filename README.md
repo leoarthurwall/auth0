@@ -1,4 +1,4 @@
-# BASIC AUTH0 APP   
+# Basic Auth0 App  
 
 This project I learn how to implenent  Auth0 authentication by creating an app that has a login & logout button, auth0 authentication, and displays profile information once logged in.
 
@@ -20,3 +20,19 @@ Also on this page you'll see the log out button, which conditionally renders whe
 
 As there is a slight delay between the login being actioned and the profile page rendering, there is a conditional 'loading...' notice, that you can see if you're on the ball.
 
+
+## Skills Used & learned
+
+- How to set up Auth0 authentication
+- useAuth0( ) custom hook
+- useAuth0( ) objects: {user, isAuthenticated, loginWithRedirect, logout, isLoading}
+- Auth0Provider custom component 
+- conditional rendering 
+  - login/logout buttons for authentication status
+  - 'loading...' text 
+- .env file to safely store Auth0 clientId and domain
+- src/components folder to seperate component moduels 
+  - login button, logout button, profile page
+- dynamic rendering of user data 
+  - {JSON.stringify(user, null, 2)} enables you to see full user data object, and choose which data to pull.
+    - NOTE: you must pull the { user } object from the useAuth0( ) custom hook to do this.
