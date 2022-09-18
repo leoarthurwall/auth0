@@ -7,7 +7,7 @@ const LoginButton = () => {
   return (
     !isAuthenticated && (
       <div className="login-container">
-        <h1>Welcome</h1>
+        <h1 className="welcome">Welcome</h1>
         <p>Log in to see your profile details...</p>
         <button className="button" onClick={() => loginWithRedirect()}>
           Log In
