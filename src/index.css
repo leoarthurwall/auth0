@@ -3,25 +3,33 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 .App{
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .button{
-  background-color: rgb(224, 231, 248);
-  border: 3px solid blue;
+  background-color: rgb(237, 237, 237);
+  border: 1.5px solid rgb(171, 171, 171);
   outline: none;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border-radius: 10px;
   cursor: pointer;
   color: rgb(99, 99, 99);
   margin: 1rem;
+  width: 100px;
 }
 
 .button:hover{
-  background-color: blue;
-  color: white;
+  background-color: rgb(203, 203, 203);
+}
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }

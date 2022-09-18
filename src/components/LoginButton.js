@@ -6,9 +6,13 @@ const LoginButton = () => {
 
   return (
     !isAuthenticated && (
-      <button className="button" onClick={() => loginWithRedirect()}>
-        Log In
-      </button>
+      <div className="login-container">
+        <h1>Welcome to the Login Page</h1>
+        <p>Log in to see your details...</p>
+        <button className="button" onClick={() => loginWithRedirect()}>
+          Log In
+        </button>
+      </div>
     )
   );
 };
