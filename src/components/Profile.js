@@ -6,11 +6,11 @@ const Profile = () => {
 
   return (
     isAuthenticated && (
-  <div>
+  <div className="profile-container">
     <img src={user.picture} alt={user.name}/>
     <h2>Hi, {user.given_name} {user.family_name}</h2>
-    <p>{user.email}</p>
-    {JSON.stringify(user, null, 2)}
+    <p>Email: {user.email}</p>
+    {/* {JSON.stringify(user, null, 2)} */}
   </div>
   ))
 };
